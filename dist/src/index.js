@@ -13,7 +13,7 @@ const routes_1 = __importDefault(require("./routes/routes"));
 const morgan_1 = __importDefault(require("morgan"));
 const mongoDB_1 = __importDefault(require("./config/mongoDB"));
 const app = (0, express_1.default)();
-const port = 3001;
+const port = process.env.PORT || 3001;
 app.use(express_1.default.json());
 app.use(express_1.default.static("public"));
 app.use((0, cors_1.default)());
