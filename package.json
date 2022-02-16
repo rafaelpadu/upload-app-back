@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=test nodemon ./src/index.ts",
     "test": "NODE_ENV=test mocha -r  ts-node/register './src/tests/*.test.ts' ",
-    "start": "NODE_ENV=prod node ./dist/index.js -p $PORT"
+    "start": "NODE_ENV=prod node ./dist/src/index.js -p $PORT"
   },
   "keywords": [],
   "author": "",

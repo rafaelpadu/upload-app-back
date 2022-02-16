@@ -10,7 +10,7 @@ import morgan from "morgan";
 import dbInit from "./config/mongoDB";
 
 const app: Application = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT;
 
 app.use(express.json());
 app.use(express.static("public"));
